@@ -1,0 +1,426 @@
+db.users.insertMany([
+...     {
+...         "id" : 1,
+...         "name" : "Raj",
+...         "m_id" : 3
+...     },
+...     {
+...         "id" : 2,
+...         "name" : "Sowmya",
+...         "m_id" : 1
+...     },
+...     {
+...         "id" : 3,
+...         "name" : "Ria",
+...         "m_id" : 2
+...     },
+...     {
+...         "id" : 4,
+...         "name" : "Tina",
+...         "m_id" : 1
+...     },
+...     {
+...         "id" : 5,
+...         "name" : "Abhi",
+...         "m_id" : 4
+...     },
+...     {
+...         "id" : 6,
+...         "name" : "Puja",
+...         "m_id" : 5
+...     },
+...     {
+...         "id" : 7,
+...         "name" : "Yukta",
+...         "m_id" : 1
+...     },
+...     {
+...         "id" : 8,
+...         "name" : "Vinay",
+...         "m_id" : 1
+...     },
+...     {
+...         "id" : 9,
+...         "name" : "Hari",
+...         "m_id" : 2
+...     },
+...     {
+...         "id" : 10,
+...         "name" : "Ramya",
+...         "m_id" : 1
+...     }
+... ]);
+
+
+
+> db.codekata.insertMany([
+...     {
+...         "u_id" : 1,
+...         "problem_id" : [1,3,6]
+...     },
+...     {
+...         "u_id" : 2,
+...         "problem_id" : [1,2,5,6,7]
+...     },
+...     {
+...         "u_id" : 3,
+...         "problem_id" : [1,9,11,15]
+...     },
+...     {
+...         "u_id" : 4,
+...         "problem_id" : [5,6]
+...     },
+...     {
+...         "u_id" : 7,
+...         "problem_id" : [2]
+...     },
+...     {
+...         "u_id" : 8,
+...         "problem_id" : [1,2,3,4,5,6,7]
+...     },
+...     {
+...         "u_id" : 10,
+...         "problem_id" : [1,6,7,8]
+...     }
+... ]);
+
+
+
+> db.topics.insertMany([
+...     {
+...         "id" : 1,
+...         "name" : "Python",
+...         "month" : "April"
+...     },
+...     {
+...         "id" : 2,
+...         "name" : ".Net",
+...         "month" : "October"
+...     },
+...     {
+...         "id" : 3,
+...         "name" : "Flask",
+...         "month" : "October"
+...     },
+...     {
+...         "id" : 4,
+...         "name" : "Angular",
+...         "month" : "May"
+...     },
+...     {
+...         "id" : 5,
+...         "name" : "Nodejs",
+...         "month" : "December"
+...     },
+...     {
+...         "id" : 6,
+...         "name" : "C#",
+...         "month" : "April"
+...     },
+...     {
+...         "id" : 7,
+...         "name" : "Java",
+...         "month" : "October"
+...     }
+... ]);
+
+
+> db.mentors.insertMany([
+...     {
+...         "id" : 1,
+...         "name" : "Ajay"
+...     },
+...     {
+...         "id" : 2,
+...         "name" : "Shagun"
+...     },
+...     {
+...         "id" : 3,
+...         "name" : "Uday"
+...     },
+...     {
+...         "id" : 4,
+...         "name" : "Tanish"
+...     },
+...     {
+...         "id" : 5,
+...         "name" : "Lisa"
+...     }
+... ]);
+
+
+> db.tasks.insertMany([
+...     {
+...         "id" : 1,
+...         "name" : "Task1",
+...         "month" : "January"
+...     },
+...     {
+...         "id" : 2,
+...         "name" : "Task2",
+...         "month" : "March"
+...     },
+...     {
+...         "id" : 3,
+...         "name" : "Task3",
+...         "month" : "March"
+...     },
+...     {
+...         "id" : 4,
+...         "name" : "Task4",
+...         "month" : "October",
+...         "tid" :7
+...     },
+...     {
+...         "id" : 5,
+...         "name" : "Task5",
+...         "month" : "October",
+...         "tid" :2
+...     },
+...     {
+...         "id" : 6,
+...         "name" : "Task6",
+...         "month" : "December",
+...         "tid" : 5
+...     },
+...     {
+...         "id" : 7,
+...         "name" : "Task7",
+...         "month" : "December",
+...         "tid" : 5
+...     }
+... ]);
+
+
+> db.company_drives.insertMany([
+...     {
+...         "id" : 1,
+...         "name" : "Google",
+...         "students" : [2,5],
+...         "date" : ISODate("2020-01-05")
+...     },
+...     {
+...         "id" : 2,
+...         "name" : "Amazon",
+...         "students" : [1],
+...         "date" : ISODate("2020-10-20")
+...     },
+...     {
+...         "id" : 3,
+...         "name" : "Microsoft",
+...         "students" : [3,7],
+...         "date" : ISODate("2020-08-05")
+...     },
+...     {
+...         "id" : 4,
+...         "name" : "Adobe",
+...         "students" : [4,6,7],
+...         "date" : ISODate("2020-10-29")
+...     },
+...     {
+...         "id" : 5,
+...         "name" : "Walmart",
+...         "students" : [8,9],
+...         "date" : ISODate("2020-12-31")
+...     },
+...     {
+...         "id" : 6,
+...         "name" : "Intel",
+...         "students" : [10],
+...         "date" : ISODate("2020-04-15")
+...     }
+... ]);
+
+
+
+> db.attendance.insertMany([
+...     {
+...         "id" : 1,
+...         "uid" : 1,
+...         "date" : ISODate("2020-10-01"),
+...         "attendance" : "A"
+...     },
+...     {
+...         "id" : 2,
+...         "uid" : 1,
+...         "date" : ISODate("2020-10-13"),
+...         "attendance" : "P"
+...     },
+...     {
+...         "id" : 3,
+...         "uid" : 1,
+...         "date" : ISODate("2020-10-19"),
+...         "attendance" : "A"
+...     },
+...     {
+...         "id" : 4,
+...         "uid" : 2,
+...         "date" : ISODate("2020-10-16"),
+...         "attendance" : "A"
+...     },
+...     {
+...         "id" : 5,
+...         "uid" : 2,
+...         "date" : ISODate("2020-10-17"),
+...         "attendance" : "A"
+...     },
+...     {
+...         "id" : 6,
+...         "uid" : 5,
+...         "date" : ISODate("2020-10-15"),
+...         "attendance" : "P"
+...     },
+...     {
+...         "id" : 7,
+...         "uid" : 5,
+...         "date" : ISODate("2020-10-25"),
+...         "attendance" : "A"
+...     },
+...     {
+...         "id" : 8,
+...         "uid" : 6,
+...         "date" : ISODate("2020-10-25"),
+...         "attendance" : "A"
+...     },
+...     {
+...         "id" : 9,
+...         "uid" : 8,
+...         "date" : ISODate("2020-10-31"),
+...         "attendance" : "P"
+...     },
+...     {
+...         "id" : 10,
+...         "uid" : 9,
+...         "date" : ISODate("2020-10-02"),
+...         "attendance" : "P"
+...     },
+...     {
+...         "id" : 11,
+...         "uid" : 9,
+...         "date" : ISODate("2020-10-08"),
+...         "attendance" : "A"
+...     },
+...     {
+...         "id" : 12,
+...         "uid" : 9,
+...         "date" : ISODate("2020-10-18"),
+...         "attendance" : "P"
+...     },
+...     {
+...         "id" : 13,
+...         "uid" : 10,
+...         "date" : ISODate("2020-10-30"),
+...         "attendance" : "A"
+...     }
+... ]);
+
+
+
+-- find all topics and tasks thought in october
+
+> db.topics.aggregate([
+...   {
+...     '$lookup': {
+...       'from': 'tasks',
+...       'localField': 'id',
+...       'foreignField': 'tid',
+...       'as': 'topics_tasks'
+...     }
+...   }, {
+...     '$match': {
+...       'month': 'October'
+...     }
+...   }
+... ]);
+{ "_id" : ObjectId("61437bae49dfdf0ba6153d40"), "id" : 2, "name" : ".Net", "month" : "October", "topics_tasks" : [ { "_id" : ObjectId("61437f4249dfdf0ba6153d5c"), "id" : 5, "name" : "Task5", "month" : "October", "tid" : 2 } ] }
+{ "_id" : ObjectId("61437bae49dfdf0ba6153d41"), "id" : 3, "name" : "Flask", "month" : "October", "topics_tasks" : [ ] }
+{ "_id" : ObjectId("61437bae49dfdf0ba6153d45"), "id" : 7, "name" : "Java", "month" : "October", "topics_tasks" : [ { "_id" : ObjectId("61437f4249dfdf0ba6153d5b"), "id" : 4, "name" : "Task4", "month" : "October", "tid" : 7 } ] }
+
+
+-- find all company drives between 15 oct 2020 to 31 oct 2020
+
+> db.company_drives.find({$and:[{"date":{$gte:ISODate('2020-10-15')}},{"date":{$lte:ISODate('2020-10-31')}}]},{"name":1,"_id":0});
+{ "name" : "Amazon" }
+{ "name" : "Adobe" }
+
+
+-- find users who are absent between 15 oct 2020 and 31 oct 2020
+
+> db.attendance.distinct("uid",{$and:[{"date":{$gte:ISODate('2020-10-15')}},{"date":{$lte:ISODate('2020-10-31')}},{"attendance":"A"}]}).length;
+5
+
+ 
+-- find all mentors who has mentees count more than 4
+
+> db.users.aggregate([
+...     {
+...         '$lookup': {
+...             'from': 'mentors',
+...             'localField': 'm_id',
+...             'foreignField': 'id',
+...             'as': 'users_mentors'
+...         }
+...     }, {
+...         '$group': {
+...             '_id': '$m_id',
+...             'count': {
+...                 '$sum': 1
+...             }
+...         }
+...     }, {
+...         '$match': {
+...             'count': {
+...                 '$gt': 3
+...             }
+...         }
+...     }
+... ]);
+{ "_id" : 1, "count" : 5 }
+
+
+-- find no of problems solved by user in codekata
+
+> db.codekata.aggregate([
+...     {
+...         '$lookup': {
+...             'from': 'users',
+...             'localField': 'u_id',
+...             'foreignField': 'id',
+...             'as': 'codekata_users'
+...         }
+...     }, {
+...         '$project': {
+...             'u_id': 1,
+...             'no_of_problems': {
+...                 '$size': '$problem_id'
+...             }
+...         }
+...     }
+... ]);
+{ "_id" : ObjectId("61437b8349dfdf0ba6153d2b"), "u_id" : 1, "no_of_problems" : 3 }
+{ "_id" : ObjectId("61437b8349dfdf0ba6153d2c"), "u_id" : 2, "no_of_problems" : 5 }
+{ "_id" : ObjectId("61437b8349dfdf0ba6153d2d"), "u_id" : 3, "no_of_problems" : 4 }
+{ "_id" : ObjectId("61437b8349dfdf0ba6153d2e"), "u_id" : 4, "no_of_problems" : 2 }
+{ "_id" : ObjectId("61437b8349dfdf0ba6153d2f"), "u_id" : 7, "no_of_problems" : 1 }
+{ "_id" : ObjectId("61437b8349dfdf0ba6153d30"), "u_id" : 8, "no_of_problems" : 7 }
+{ "_id" : ObjectId("61437b8349dfdf0ba6153d31"), "u_id" : 10, "no_of_problems" : 4 }
+
+
+-- find all the company drives and students who appeared for them.
+
+> db.company_drives.find({},{"name":1,"students":1,"_id":0});
+{ "name" : "Google", "students" : [ 2, 5 ] }
+{ "name" : "Amazon", "students" : [ 1 ] }
+{ "name" : "Microsoft", "students" : [ 3, 7 ] }
+{ "name" : "Adobe", "students" : [ 4, 6, 7 ] }
+{ "name" : "Walmart", "students" : [ 8, 9 ] }
+{ "name" : "Intel", "students" : [ 10 ] }
+>
+
+
+
+
+
+
+
+
