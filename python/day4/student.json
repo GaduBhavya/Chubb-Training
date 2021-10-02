@@ -1,0 +1,35 @@
+[
+    {
+        "id" : 1,
+        "name" : "Rahul",
+        "branch" : "CSE",
+        "redg_no" : 501,
+        "year" : 3
+    },
+    {
+        "id" : 2,
+        "name" : "Priya",
+        "branch" : "CSE",
+        "redg_no" : 547
+    },
+    {
+        "id" : 3,
+        "name" : "Tina",
+        "branch" : "IT",
+        "redg_no" : 423,
+        "year" : 1
+    },
+    {
+        "id" : 4,
+        "name" : "Shagun",
+        "redg_no" : 467,
+        "year" : 3
+    },
+    {
+        "id" : 5,
+        "name" : "Vivek",
+        "branch" : "IT",
+        "redg_no" : 450,
+        "year" : 1
+    }
+]
