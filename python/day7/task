@@ -1,0 +1,43 @@
+from flask import Flask
+from flask import render_template, jsonify, request
+from flask_sqlalchemy import SQLAlchemy
+
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABSE_URI'] = 'mysql+pymysql://root:bhavya@localhot/guvi'
+app.config['SECRET_KEY'] = ''
+
+db = SQLAlchemy(app)
+
+@app.route('/', methods = ['GET'])
+def fetch():
+    data = APIUerModel.query.all()
+    data_all = []
+    for data in data:
+        data_all.append()
+    return jsonify(data_all)
+
+@app.route('/update/<int:id', methods = ['POST'])
+def update(id):
+    name = request.get_json()['name']
+    save_to_database = db.session
+    try:
+        api_user_model = APIUserModel.query.filter_by(id=id).first()
+        api_user_model.name =name
+        save_to_database
+    except:
+        return jsonify({"message":"error in update"})
+    id = api_user_model.id
+    data = APIUserModel.query.filter_by(id=id).first()
+    retun jsonify({})
+
+app.route('/delete/<int:id>',methods = ['DELETE'])
+def delete(id):
+    try:
+        save_to_database = db.session
+        APIUserModel.query.filter_by(id=id).delete()
+        save_to_database.commit()
+    except:
+        return jsonify({"message":"error in delete"})
+
+if __name__ == '__main__':
+    app.run(debug = True, port = 5000)
