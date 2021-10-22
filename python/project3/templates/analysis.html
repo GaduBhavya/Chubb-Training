@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            border-bottom: 3px solid grey;
+            padding: 5px;
+            background-color:lightgray;
+        }
+        body
+        {
+            background-color:snow;
+            font-size: large;
+        }
+        div{
+            padding: 20px;
+        }
+        img{
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            display: block;
+        }
+        button
+        {
+            width: 70px;
+
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>REGRESSION ANALYSIS</h1></center>
+    <div>
+        <h3>1. Predicting the relation between physical activity and body mass index using Polynomial regression</h3>
+    <img src='static/images/pol.png'>
+    <center>R2 score is 0.9873629367367641</center>
+    <p>Analysis:<br>
+        From the r2 score which is 0.98, it is clearly understood that the physical activity and body mass index are highly correlated. Clear awareness on physical activities helps the population to have balanced body mass index. From the prediction it is observed that for 1000 units decrease 
+        in awareness towards physical fitness or lack of physical fitness leads to 5000 units increase in high body mass index.
+    </p><br>
+    <h3>2. Comparing the handwashing facility in India and Pakistan using Multinomail regression</h3>
+    <img src='static/images/pol.png'>
+    <center>India ----- [0.53941374 0.12691466]<br>
+        Pakistan -- [0.14601608 0.38339417]</center>
+    <p>Analysis:<br>
+        From the regression coefficient it is clearly evident that India's water sources are contributing much to the countries handwashing facility than in Pakistan i.e.,
+         one unit downfall in the water source purity leads to 0.53 units decrease in access to handwash. In Pakistan, the sanitation is contributing much to the handwashing facility than in India i.e., 
+         one unit downfall in the sanitation facility leads to 0.38 units decrease in access to handwash.<br>
+
+The comparisions within the countries provides the clear insight that in India the water sources affect on handwashing facility is much more than the affect of sanitation on handwashing facility. On the other hand in Pakistan, 
+the handwashing facility is degrading due to unhygienic sanitation.<br>
+
+Finally, it can be inferred that in order to increase the handwashing facility, the water sources need to be improved in India and sanitation need to be improved in Pakistan.
+    </p><br>
+    <h3>3. Relation between air pollution and outdoor air pollution in India</h3>
+    <img src='static/images/lin.png'>
+    <center>Regression coefficient= 0.5231291380349647</center>
+    <p>Analysis:<br>
+        From the regresion coefficient which is 0.52, it can be observed that the two features air pollution and outdoor air pollution in India are not very much correlated.
+        Even though the outdoor air pollution is one of the cause of air pollution in India but it is not the only reason for the pollution.
+    </p><br>
+
+    <button><a href="/">Back</a></button>
+    <center><a href="/static/Analysis Report.pdf" download >Click here to download report</a></center>
+    </div>
+</body>
+</html>

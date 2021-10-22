@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={{url_for('static',filename = 'css/home.css')}}>
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+    <div class="heading"><center><h1>ANALYSIS ON DEATH MORTALITY RATES OF WORLD COUNTRIES</h1></center></div>
+    <div class="content">
+        <h2>About the Data set:</h2>
+        <p><ul><li>The dataset contains data about death mortality rates and their various causes (Alcohol use, Drug use, Smoking etc.) of around 200 different countries from 1990 to 2017.</li>
+            <li>Dimensions of the dataset - 6469 X 32.</li>
+             <li>Size - 2.2MB</li>
+             
+             <ul>
+        </p><br><br>
+        <center style="font-size: larger;"><a href="graph">View graphs</a></center><br>
+        <center style="font-size: larger;"><a href="analysis">View Regression analysis</a></center>
+        <br><br>
+        <center><a href="/static/Report.pdf" download >Click here to download full report</a></center>
+    </div>
+    {% endblock %}
+</body>
+</html>
