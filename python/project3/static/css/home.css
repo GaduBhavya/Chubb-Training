@@ -1,0 +1,13 @@
+.heading{
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color:mintcream;
+    margin: 20px;
+}
+
+.content
+{
+    background-color: snow;
+    font-size:larger;
+    padding: 20px;
+}
