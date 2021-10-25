@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aliceblue;
+            margin: 10px;
+            padding: 5px;
+            border: 5px solid gray;
+        }
+        p{
+            font-size: larger;
+            text-shadow: 0px 0px 3px black;
+        }
+        img{
+            width: 700px;
+            height: 600px;
+            margin:0px 0px 10px 10px;
+            border-bottom: 2px solid grey;
+        }
+    </style>
+</head>
+<body>
+    <p>1. Total Confirmed vs Total Deceased</p>
+    <img src='/static/img1.png'/>
+    <p><ul>
+        <li>R2 Score-0.9980586222003194</li>
+        <li>For increase in 1000 Confirmed cases, 1677.3971369521794 total deaths have occured according to analysis </li>
+    </ul></p><br>
+    <p>2. Total Confirmed vs Total Recovered</p>
+    <img src='/static/img2.png'/>
+    <p><ul>
+        <li>R2 Score-0.9980517218522031</li>
+        <li>For every 500000 confirmed cases, 311132.46120434196 people gets recovered on the whole.</li>
+    </ul></p><br>
+    <p>3. Total Recovered vs Total Deceased</p>
+    <img src='/static/img3.png'/>
+    <p><ul>
+        <li>R2 Score-0.9985064566332172</li>
+        <li>For every 1000 recovery cases, 6101.707919838336 deceased cases are predicted to happen </li>
+    </ul></p><br>
+    <p>4. Daily Confirmed vs Daily Deceased</p>
+    <img src='/static/img4.png'/>
+    <p><ul>
+        <li>R2 Score-0.7381034977109493</li>
+        <li>For increase in 5000 Confirmed cases on daily basis, 60.062429610994904 total deaths will happen</li>
+    </ul></p><br>
+    <p>5. Daily Confirmed vs Daily Recovered</p>
+    <img src='/static/img5.png'/>
+    <p><ul>
+        <li>R2 Score-0.8604747056181244</li>
+        <li>According to analysis, 512.7086923590632 people recover daily for 1000 confirmed cases. </li>
+    </ul></p><br>
+    <p>6. Daily Recovered vs Daily Deceased</p>
+    <img src='/static/img6.png'/>
+    <p><ul>
+        <li>R2 Score-0.8829374003561735</li>
+        <li>For 1000 recovery cases daily, it is predicted that 41.91132351646439 people will be deceased the same day.</li>
+    </ul></p><br>
+</body>
+</html>
