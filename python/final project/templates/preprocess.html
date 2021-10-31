@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: snow;
+        }
+        .heading{
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            margin: 15px;
+            margin-bottom: 0;
+            background-color:ghostwhite;
+            border: 2px solid lightgrey;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .content
+          {
+              background-color: ghostwhite;
+              margin: 15px;
+              padding: 10px;
+              border: 2px solid lightgrey;
+          }
+
+          .cont
+          {
+            font-size: 25px;
+            margin: 15px;
+          }
+
+          h2{
+              font-style: italic; 
+          }
+
+          img{
+              width: 500px;
+              height: 500px;
+          }
+
+          tr,td{
+              border: 1px solid black;
+          }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="heading">USA House Price Analysis</p>
+        <div class="content">
+            <a href="about" style="font-size: x-large;">Back</a><br><br>
+            <h1>Outlier Detection and Elimination</h1>
+            <p class='cont'>
+                Outliers are the data points that differ from other observations and are generally due to experimental errors which cause deviations while analysing the data.
+                So, the outliers are to be found and handled which can be done using Boxplots.<br><br>
+                The following graphs show the boxplots before and after removing outliers.
+                <table cellpadding=15% cellspacing=5>
+                    <tr>
+                        <td>
+                        <h2>Price-</h2>
+                        <img src="/static/images/price.png"/>
+                        </td>
+                        <td>
+                        <h2>Bedrooms-</h2>
+                        <img src="/static/images/bedrooms.png"/>
+                        </td>
+                        <td>
+                            <h2>Bathrooms-</h2>
+                            <img src="/static/images/bathrooms.png"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <h2>Squareft_living-</h2>
+                        <img src="/static/images/sqft_living.png"/>
+                        </td>
+                        <td>
+                        <h2>Squareft_lot-</h2>
+                        <img src="/static/images/sqft_lot.png"/>
+                        </td>
+                        <td>
+                            <h2>Floors-</h2>
+                            <img src="/static/images/floors.png"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <h2>Waterfront-</h2>
+                        <img src="/static/images/waterfront.png"/>
+                        </td>
+                        <td>
+                        <h2>View-</h2>
+                        <img src="/static/images/view.png"/>
+                        </td>
+                        <td>
+                            <h2>Condition-</h2>
+                            <img src="/static/images/condition.png"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <h2>Squareft_above-</h2>
+                        <img src="/static/images/sqft_above.png"/>
+                        </td>
+                        <td>
+                        <h2>Squareft_basement-</h2>
+                        <img src="/static/images/sqft_basement.png"/>
+                        </td>
+                    </tr>
+                </table>
+                </div>
+            </p>
+
+        </div>
+    </div>
+</body>
+</html>

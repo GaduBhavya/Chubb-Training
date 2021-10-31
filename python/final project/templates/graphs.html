@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: snow;
+        }
+        .heading{
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            margin: 15px;
+            margin-bottom: 0;
+            background-color:ghostwhite;
+            border: 2px solid lightgrey;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .list {
+            list-style-type: none;
+            padding: 0;
+            overflow: hidden;
+            background-color: gray;
+            margin: 15px;
+            margin-top: 0;
+          }
+          
+          .list li {
+            float:left;
+          }
+          
+          .list li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: larger;
+          }
+          
+          .list li a:hover {
+            background-color: #111;
+          }
+
+          .content
+          {
+              background-color: ghostwhite;
+              margin: 15px;
+              padding: 10px;
+              border: 2px solid lightgrey;
+          }
+
+          img{
+            width: 50%;
+            height: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        .link{
+          text-align: center;
+          font-size:x-large;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="heading">USA House Price Analysis</p>
+        <ul class="list">
+            <li><a href="about">About</a></li>
+            <li><a href="graphs">Graphs</a></li>
+            <li><a href="/">Back to Home</a></li>
+          </ul>
+          <div class="content"><br>
+            <a class="link" href="/static/USA House Price Analysis.pdf" download>Click here to download entire report</a><br>
+            <h2>1. Top 10 cities with highest house prices-</h2>
+            <img src="/static/images/top10.png"/>
+            <h2>2. Bottom 10 cities with least house prices-</h2>
+            <img src="/static/images/bottom10.png"/>
+            <h2>3. Change in house prices over decades</h2>
+            <img src="/static/images/price_year.png"/>
+            <h2>4. Analysis in no. of floors in house-</h2>
+            <img src="/static/images/floors_pie.png"/>
+            <h2>5. Square feet of living VS Price</h2>
+            <img src="/static/images/reg_living.png"/>
+            <h2>5. No. of bedrooms VS Price</h2>
+            <img src="/static/images/reg_bedroms.png"/>
+            <h2>6. Square feet of basement VS Price</h2>
+            <img src="/static/images/reg_basement.png"/>
+            <h2>5. Square feet of lot VS Price</h2>
+            <img src="/static/images/reg_lot.png"/>
+          </div>
+    </div>
+</body>
+</html>

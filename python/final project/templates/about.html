@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: snow;
+        }
+        .heading{
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            margin: 15px;
+            margin-bottom: 0;
+            background-color:ghostwhite;
+            border: 2px solid lightgrey;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .list {
+            list-style-type: none;
+            padding: 0;
+            overflow: hidden;
+            background-color: gray;
+            margin: 15px;
+            margin-top: 0;
+          }
+          
+          .list li {
+            float:left;
+          }
+          
+          .list li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: larger;
+          }
+          
+          .list li a:hover {
+            background-color: #111;
+          }
+
+          .intro , .dataset
+          {
+              font-size: 25px;
+              margin: 15px;
+          }
+
+          .content
+          {
+              background-color: ghostwhite;
+              margin: 15px;
+              padding: 10px;
+              border: 2px solid lightgrey;
+          }
+          img{
+              float:right;
+              width: 500px;
+              height: 400px;
+              margin: 20px;
+              opacity: 0.5;
+          }
+          .dataset ul
+          {
+              font-size: 25px;
+          }
+
+          .link{
+            text-align: center;
+            font-size:x-large;
+          }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="heading">USA House Price Analysis</p>
+        <ul class="list">
+            <li><a class="active" href="about">About</a></li>
+            <li><a href="graphs">Graphs</a></li>
+            <li><a href="/">Back to Home</a></li>
+          </ul>
+          <div class="content">
+            <h1>Introduction</h1>
+            <img src="/static/images/img1.jfif"/>
+          <p class="intro">
+            
+            The real estate markets show much interest to analyze and predict where property prices are moving towards.
+             Prediction of property prices is becoming increasingly important and beneficial. It hight affects the market's growth
+             and are also a good indicator of both the overall market condition and the economic health of a country. 
+             Using the data set available, analysis was made on how different features affects to house prices in USA.
+          </p>
+          <h1>Dataset</h1>
+          <p class="dataset">
+            1. The dataset contains the house prices in the year 2014 for different cities and streets of USA.<br>
+            2. Dimensions - 4600 X 17<br>
+            3. Features - Date, Price, Bedrooms, Bathrooms, Sqft_living, Sqft_lot, Floor, Waterfront, View, Condition, Sqft_above, Sqft_basement, Yr_built, Yr_renovated, Street, City, Statezip, Country
+            <br><br>
+            <div class="link">
+              <a href="https://www.kaggle.com/shree1992/housedata">Click here for dataset</a><br><br>
+              <a href="preprocess">Data preprocessing</a>
+            </div>
+          </p>
+          
+          </div>
+    </div>
+</body>
+</html>
